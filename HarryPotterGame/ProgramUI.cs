@@ -81,10 +81,12 @@ namespace HarryPotterGame
                     Console.Clear();
                     Console.WriteLine("It's completely dark inside, the air dry, and you hear nothing. It's as if no one has been inside for centuries.\n" +
                                       "Walking further in the doors behind you quickly close shut by themselves.\n" +
-                                      "Without any other options available you walk forward through the dark room hoping to stumble upon another door." +
+                                      "Without any other options available you walk forward through the dark room hoping to stumble upon another door.\n" +
                                       "Instead of bumping into a door you bump into what feels like a big fleshy mound you hear a loud 'Raaarrrgh!'.\n" +
-                                      "Suddenly the room lights up with torches attached to the walls this reveals a 10ft tall Troll holding onto a massive club in both hands.\n" +
-                                      "The Troll lets out another loud 'Rarrrrrgh!!!!' and rushes straight to you!");
+                                      "Suddenly the room lights up with torches attached to the walls of the room.\n" +
+                                      "this reveals a 10ft tall Troll holding onto a massive club in both hands.\n" +
+                                      "The Troll lets out another loud 'Rarrrrrgh!!!!' and rushes straight to you!\n" +
+                                      "Press Enter To Continue");
 
                     Console.ReadKey();
 
@@ -93,7 +95,8 @@ namespace HarryPotterGame
                         EncounteredMonster("You've encountered a massive troll!",
                             "The troll swings his massive club down at you! You're able to dodge out of the way! Press Enter\n" +
                             "Mr. Troll comes rushing at you after you finish casting the spell you make a quick roll to dodge! Darn! That spell didn't work Press Enter.",
-                            "You knocked the troll out with it's club by using the levitation spell! You have retreived the Blue Stone!",
+                            "You knocked the troll out with it's club by using the levitation spell! It falls to the floor and a object falls from it's mouth.\n" +
+                            "You've retreived the Blue Stone! Press Enter",
                             AttackType.WingardiumLeviosa);
                         Console.ReadKey();
                         isInFirstRoom = false;
@@ -102,15 +105,21 @@ namespace HarryPotterGame
                 while (isInSecondRoom)
                 {
                     Console.Clear();
-                    Console.WriteLine("feels good boi.");
+                    Console.WriteLine("With the troll defeated you grab the stone and move to a closed door.\n" +
+                                      "Opening the door reveals stairs that lead downward\n" +
+                                      "Going down the set of stairs has you inside of another room, but this one has the look of underground dungeon.\n" +
+                                      "This time it wasn't dark it was lite the same as the room with the troll.\n" +
+                                      "As you were looking around the room you hear a 'woof! woof! woof!' you turn your head and see a three-headed beast with a dog collar around it's neck\n" +
+                                      "on the collar you see the word 'Fluffy'. This time instead of being charged at you charge full speed at 'Fluffy' readying your spells.\n" +
+                                      "Press Enter To Continue");
 
                     Console.ReadKey();
 
                     while (hasEncounteredFluffy)
                     {
                         SecondEncounteredMonster("Your next beast is the Three-Headed dog, Fluffy.",
-                            "Fluffy bit your arm off! It has defeated you\n" +
-                            "You have failed to collect all three stones.",
+                            "Fluffy bites onto your arm! It throws you across the room!\n" +
+                            "The beast sits up on it's hind legs then comes back down on top of you forcing you to be prone.",
                             "You put Fluffy to sleep by casting a music spell! You have retreived the Red Stone!",
                             AttackType.MusicSpell);
                         Console.ReadKey();
@@ -119,7 +128,7 @@ namespace HarryPotterGame
                 while (isInThirdRoom)
                 {
                     Console.Clear();
-                    Console.WriteLine("feels good boi.");
+                    Console.WriteLine("");
 
                     Console.ReadKey();
 
@@ -148,7 +157,7 @@ namespace HarryPotterGame
                                                                
                                                                ");
 
-                        Console.Write("                                      You have completed the game!\n" +
+                        Console.Write("                                     Congrates You have completed the game!\n" +
                             "               -----------------------------------------------------------------------\n" +
                             "                                             1. Exit Game\n" +
                             "               -----------------------------------------------------------------------\n");
