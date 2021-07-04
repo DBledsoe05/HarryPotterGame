@@ -118,9 +118,9 @@ namespace HarryPotterGame
                     while (hasEncounteredFluffy)
                     {
                         SecondEncounteredMonster("Your next beast is the Three-Headed dog, Fluffy.",
-                            "Fluffy bites onto your arm! It throws you across the room!\n" +
-                            "The beast sits up on it's hind legs then comes back down on top of you forcing you to be prone.",
-                            "You put Fluffy to sleep by casting a music spell! You have retreived the Red Stone!",
+                            "Fluffy bites onto your arm! It throws you across the room! Press Enter\n" +
+                            "The beast sits up on it's hind legs then comes back down on top of you forcing you to be prone. Press Enter",
+                            "You put Fluffy to sleep by casting a music spell! You have retreived the Red Shard! Press Enter",
                             AttackType.MusicSpell);
                         Console.ReadKey();
                     }
@@ -128,16 +128,21 @@ namespace HarryPotterGame
                 while (isInThirdRoom)
                 {
                     Console.Clear();
-                    Console.WriteLine("");
+                    Console.WriteLine("With Fluffy put to sleep you grab the second shard and see that there was a trap door behind the beast.\n" +
+                                      "You open the trap door and see a ladder going down\n" +
+                                      "Climbing down the ladder the scenery changes from a dungeon in a castle to a.....forest...somehow in this castle resides a living forest.\n" +
+                                      "Getting off the ladder you start walking through the best clearing of plants and fauna.\n" +
+                                      "You finally reach what seems like the edge of the forest. Same deal as before there's nothing....But THEN you hear a swoosh! in the air.\n" +
+                                      "and then a wraithlike creature grabs ahold of you!");
 
                     Console.ReadKey();
 
                     while (hasEncounteredDementor)
                     {
                         ThirdEncounteredMonster("Oh no! A Dementor!",
-                            "The Dementor consumed your soul!\n" +
-                            "It has defeated you. Press Enter to move on.",
-                            "You cast away the Dementor with the Expecto Patronum spell! You have retreived the Green Stone!",
+                            "The Dementor is consuming your soul! Press Enter\n" +
+                            "Your soul is slowly leaving your body act fast of you'll never act again. Press Enter.",
+                            "You cast away the Dementor with the Expecto Patronum spell! You have retreived the Green Stone! Press Enter",
                             AttackType.ExpectoPatronum);
                         Console.ReadKey();
                     }
